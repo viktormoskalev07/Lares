@@ -7,10 +7,10 @@ var swiper = new Swiper(".HomepageSwiperInit", {
       el: "hp-pagination-init",
       clickable: true,
     },
-    navigation: {
-        nextEl: '.hp-next-init',
-        prevEl: '.hp-prev-init',
-      },
+    // navigation: {
+    //     nextEl: '.hp-next-init',
+    //     prevEl: '.hp-prev-init',
+    //   },
     breakpoints: {
       640: {
         slidesPerView: 2,
@@ -21,11 +21,8 @@ var swiper = new Swiper(".HomepageSwiperInit", {
         spaceBetween: 40,
       },
       1024: {
-        grabCursor:false,
         slidesPerView: 4, 
-        loop:false, 
-        allowTouchMove: false, //switch off on desktop
-
+        // allowTouchMove: false, //switch off on desktop
       },
     },
   });

@@ -1,0 +1,154 @@
+.section-post{
+    p{
+        color:#797c7c;
+    }
+    &__wrapper{
+        @include xl{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    .title{
+        line-height: 1.2;
+    }
+    &__blocks{
+        @include xl{
+            width: calc(100% - 410px);
+        }
+    }
+    &__item{
+        @include md{
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+    }
+    &__sidebar{
+        @include xl{
+            width: 370px;
+        }
+        @include xl{
+            .title__b-top{
+                margin-bottom: 24px;
+            }
+            .section-post__item{
+                display: block;
+                .title{
+                    font-size: 22px;
+                }
+            }
+            .section-post__img{
+                figure{
+                    padding-bottom: calc(160% / 370 * 100);
+                }
+            }
+            .section-post__content{
+                width: 100%;
+                margin-top: -19px;
+                margin-left: 15px;
+                position: relative;
+                z-index: 1;
+                p{
+                    height: 40px;
+                    overflow: hidden;
+                }
+            }
+            .section-post__user{
+                display: none;
+            }
+            .section-post__link button{
+                margin-left: 0;
+            }
+        }
+    }
+    &__content{
+        width: calc(100% - 350px);
+    }
+    &__mark{
+        font-size: 14px;
+        color: #fff;
+        padding: 5px 13px;
+        background: #a9aaaa;
+        border-radius: 3px;
+        margin-bottom: 25px;
+        display: inline-block;
+        @include md{
+            margin-bottom: 10px;
+        }
+    }
+    &__img{
+        overflow: hidden;
+        max-width: 310px;
+        width: 100%;
+        @include md{
+            border-radius: 3px;
+            margin-right: 50px;
+        }
+        figure{
+            padding-bottom: calc(154% / 320 * 100);
+            width: 100%;
+            position: relative;
+            height: 100%;
+            margin: 0;
+            @include md{
+                padding-bottom: calc(328% / 310 * 100);
+            }
+        }
+
+        picture{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+        @include md{
+            margin-bottom: 0;
+        }
+        p{
+            color: #666;
+            font-style: italic;
+            font-size: 14px;
+            span{
+                @include md{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__icon{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 18px;
+    }
+    &__link{
+        margin-top: 20px;
+        @include md{
+            margin-top: 0px;
+        }
+        button{
+            color: #00A9FF;
+            font-size: 17px;
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            @include md{
+                margin-left: auto;
+            }
+        }
+        svg{
+            @include sm{
+                margin-left: 20px;
+            }
+        }
+    }
+}

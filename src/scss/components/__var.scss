@@ -4,8 +4,9 @@ $logowidth:50px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
-$xl: 1200px;
-$xxl: 1400px; 
+$xl: 1024px;
+$xxl: 1200px;
+$xxxl: 1400px; 
 @mixin sm {
   @media (min-width:$sm) {
     @content
@@ -28,6 +29,11 @@ $xxl: 1400px;
 }; 
 @mixin xxl {
   @media (min-width:$xxl) {
+    @content
+  }
+};
+@mixin xxxl {
+  @media (min-width:$xxxl) {
     @content
   }
 };
