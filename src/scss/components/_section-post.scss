@@ -25,13 +25,11 @@
         }
     }
     &__sidebar{
-        @include xl{
-            width: 370px;
+        .title__b-top{
+            margin-bottom: 24px;
         }
         @include xl{
-            .title__b-top{
-                margin-bottom: 24px;
-            }
+            width: 370px;
             .section-post__item{
                 display: block;
                 .title{
@@ -61,6 +59,9 @@
                 margin-left: 0;
             }
         }
+    }
+    &__wrap-sidebar{
+        margin-bottom: 80px;
     }
     &__content{
         width: calc(100% - 350px);
@@ -148,6 +149,26 @@
         svg{
             @include sm{
                 margin-left: 20px;
+            }
+        }
+    }
+    &__tags{
+        display: flex;
+        margin: 0 -8px;
+        flex-wrap: wrap;
+        a{
+            padding: 5px 13px;
+            background: #00a8ff;
+            color: #fff;
+            font-size: 14px;
+            margin: 6px 8px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            transition: .3s;
+            &:hover{
+                background: transparent;
+                border: 1px solid #00a8ff;
+                color: #00a8ff;
             }
         }
     }

@@ -1,0 +1,47 @@
+.mini-block{
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__title{
+        text-transform: none;
+        margin: 0px;
+        margin-bottom: 1px;
+        font-size: 18px;
+    }
+    &__content{
+        p{
+            color: #171717;
+            font-size: italic;
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    &__img{
+        overflow: hidden;
+        max-width: 70px;
+        width: 100%;
+        @include md{
+            border-radius: 3px;
+            margin-right: 27px;
+        }
+        figure{
+            padding-bottom: calc(154% / 320 * 100);
+            width: 100%;
+            position: relative;
+            height: 100%;
+            margin: 0;
+            @include md{
+                padding-bottom: calc(66% / 71 * 100);
+            }
+        }
+        picture{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

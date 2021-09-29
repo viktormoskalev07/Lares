@@ -12,9 +12,11 @@
                     @@include('./html-templates/section-post-item.html',{})
                 </div>
                 <div class="section-post__sidebar">
-                    <h2 class="title title__b-top">Mais Lidos</h2>
-                    @@include('./html-templates/section-post-item.html',{})
-                    @@include('./html-templates/section-post-item.html',{})
+                    <div class="section-post__wrap-sidebar">
+                        <h2 class="title title__b-top">Mais Lidos</h2>
+                        @@include('./html-templates/section-post-item.html',{})
+                        @@include('./html-templates/section-post-item.html',{})
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,10 +52,34 @@
                     @@include('./html-templates/section-post-item.html',{})
                 </div>
                 <div class="section-post__sidebar">
-                    <h2 class="title title__b-top">Mais Recentes</h2>
-                    
+                    <div class="section-post__wrap-sidebar">
+                        <h2 class="title title__b-top">Mais Recentes</h2>
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                    </div>
+                    <div class="section-post__wrap-sidebar">
+                        <h2 class="title title__b-top">Tags</h2>
+                        <div class="section-post__tags">
+                            <a href="#">Saúde</a>
+                            <a href="#">Demência</a>
+                            <a href="#">Dicas de Especialidades</a>
+                            <a href="#">Longevidade</a>
+                            <a href="#">Comparticipações</a>
+                            <a href="#">Gestão</a>
+                            <a href="#">Guias da cidade</a>
+                            <a href="#">Procura</a>
+                            <a href="#">Gestão</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="section-subscribe">
+        <div class="container">
+            <h2 class="title">Subscreva para receber conselhos, promoções e novidades no seu email.</h2>
         </div>
     </section>
     </main>
