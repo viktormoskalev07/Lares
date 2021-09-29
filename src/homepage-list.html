@@ -1,9 +1,11 @@
 @@include('html-templates/head.html',{
-    title:'Lares',
+    title:'Homepage List',
     metadesc:'Lares'
     })
     <main class="main"> 
-    @@include('./html-templates/section-hero.html')
+        @@include('./html-templates/section-hero.html',{
+            img: 'list'
+        })
     <section class="section-post">
         <div class="container">
             <div class="section-post__wrapper">
@@ -12,27 +14,23 @@
                     @@include('./html-templates/section-post-item.html',{})
                 </div>
                 <div class="section-post__sidebar">
-                    <div class="section-post__wrap-sidebar">
-                        <h2 class="title title__b-top">Mais Lidos</h2>
-                        @@include('./html-templates/section-post-item.html',{})
-                        @@include('./html-templates/section-post-item.html',{})
-                    </div>
+                    <h2 class="title title__b-top">Mais Lidos</h2>
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
                 </div>
             </div>
         </div>
     </section>
     <section class="section-slider">
-        <div class="swiper-container swipercolor">
-            <div class="swiper-container HomepageSwiperInit">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                </div>
-                <div class="swiper-pagination hp-pagination-init"></div>
-            </div> 
-        </div>
+        <div class="swiper-container HomepageSwiperInit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <div class="swiper-pagination hp-pagination-init"></div>
+        </div> 
         <style>
             /* remove it */
             .swiper-slide{
@@ -77,15 +75,24 @@
             </div>
         </div>
     </section>
-    <section class="section-subscribe">
+    @@include('./html-templates/section-subscribe.html',{
+    }) 
+    <section class="section-post">
         <div class="container">
-            <h2 class="title">Subscreva para receber conselhos, promoções e novidades no seu email.</h2>
+            <div class="section-post__wrapper">
+                <div class="section-post__blocks">
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
+                </div>
+                <div class="section-post__sidebar">
+                </div>
+            </div>
         </div>
     </section>
     </main>
     @@include('./html-templates/footer.html',{
     }) 
+    <script src="./js/slider-init.js"></script>
     </div> 
-    </body>
-    
-    </html>
+</body>
+</html>

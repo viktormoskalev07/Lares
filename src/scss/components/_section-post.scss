@@ -1,8 +1,15 @@
 .section-post{
+    .container{
+        padding: 0;
+        @include md{
+            padding: 0 20px;
+        }
+    }
     p{
         color:#797c7c;
     }
     &__wrapper{
+        margin: 60px 0;
         @include xl{
             display: flex;
             justify-content: space-between;
@@ -14,14 +21,87 @@
     }
     &__blocks{
         @include xl{
-            width: calc(100% - 410px);
+            width: calc(100% - 440px);
+        }
+        &_two{
+            @include md{
+                .title{
+                    margin-bottom: 10px;
+                }
+                .section-post__content{
+                    width: 100%;
+                    background: #fff;
+                    padding: 0 26px 25px;
+                    box-shadow: 0 4px 14px 0 rgba(222, 222, 222, 0.5);
+                    p{
+                        max-height: 35px;
+                        overflow: hidden;
+                    }
+                }
+                .section-post__item{
+                    width: 100%;
+                    display: block;
+                    margin: 0px 0px 60px;
+                }
+                .section-post__img{
+                    max-width: none;
+                    figure{
+                        padding-bottom: calc(195% / 370 * 100);
+                    }
+                }
+                .section-post__link{
+                    button{
+                        margin-left: 0;
+                    }
+                }
+            }
+            @include xl{
+                width: calc(100% - 370px);
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -20px;
+                .section-post__img{
+                    max-width: 730px;
+                }
+                .section-post__item{
+                    padding: 0 20px;
+                    width: calc(100% - 40px);
+                }
+                
+            } 
+            @include xxl{
+                .section-post__item{
+                    padding: 0;
+                    width: calc(50% - 40px);
+                    display: block;
+                    margin: 0px 20px 60px;
+                }
+                .section-post__img{
+                    max-width: 370px;
+                }
+                .section-post__content{
+                    width: 100%;
+                    max-width: 335px;
+                    margin-top: -40px;
+                    padding: 0 26px 25px;
+                    box-shadow: 0 4px 14px 0 rgba(222, 222, 222, 0.5);
+                    p{
+                        max-height: 35px;
+                        overflow: hidden;
+                    }
+                }
+            }
         }
     }
     &__item{
+        margin: 35px 0;
         @include md{
             display: flex;
             align-items: center;
-            margin-bottom: 60px;
+            margin: 0px 0 60px;
+        }
+        &:last-child{
+            margin-bottom: 0;
         }
     }
     &__sidebar{
@@ -37,6 +117,8 @@
                 }
             }
             .section-post__img{
+                margin: 0;
+                max-width: 370px;
                 figure{
                     padding-bottom: calc(160% / 370 * 100);
                 }
@@ -61,10 +143,21 @@
         }
     }
     &__wrap-sidebar{
+        padding: 0 20px;
         margin-bottom: 80px;
+        @include md{
+            padding: 0;
+        }
     }
     &__content{
-        width: calc(100% - 350px);
+        position: relative;
+        z-index: 1;
+        margin-top: -15px;
+        padding: 0 25px;
+        @include md{
+            padding: 0;
+            width: calc(100% - 350px);
+        }
     }
     &__mark{
         font-size: 14px;
@@ -80,9 +173,9 @@
     }
     &__img{
         overflow: hidden;
-        max-width: 310px;
-        width: 100%;
         @include md{
+            width: 100%;
+            max-width: 310px;
             border-radius: 3px;
             margin-right: 50px;
         }
@@ -161,7 +254,7 @@
             background: #00a8ff;
             color: #fff;
             font-size: 14px;
-            margin: 6px 8px;
+            margin: 5px 8px;
             border-radius: 3px;
             border: 1px solid transparent;
             transition: .3s;
@@ -171,5 +264,11 @@
                 color: #00a8ff;
             }
         }
+    }
+    &__small-block{
+
+    }
+    &__big-block{
+        
     }
 }

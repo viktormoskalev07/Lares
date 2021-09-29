@@ -1,17 +1,98 @@
 @@include('html-templates/head.html',{
-title:'Lares',
-metadesc:'Lares'
-})
-
- 
-<main class="main"> 
- 
-</main>
-
-@@include('./html-templates/footer.html',{
-}) 
-</div> 
-<script src="js/main.js"> </script>
+    title:'Lares',
+    metadesc:'Lares'
+    })
+    <main class="main"> 
+        @@include('./html-templates/section-hero.html',{
+            img: 'list'
+        })
+    <section class="section-post">
+        <div class="container">
+            <div class="section-post__wrapper">
+                <div class="section-post__blocks">
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
+                </div>
+                <div class="section-post__sidebar">
+                    <h2 class="title title__b-top">Mais Lidos</h2>
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-slider">
+        <div class="swiper-container HomepageSwiperInit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <div class="swiper-pagination hp-pagination-init"></div>
+        </div> 
+        <style>
+            /* remove it */
+            .swiper-slide{
+                background-color: #f5f6f6;
+                padding: 25px;
+                border: solid rgb(196, 136, 136) 1px;
+                background-clip: content-box;
+                height: 300px;
+            }
+          </style>
+    </section>
+    <section class="section-post">
+        <div class="container">
+            <div class="section-post__wrapper">
+                <div class="section-post__blocks">
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
+                </div>
+                <div class="section-post__sidebar">
+                    <div class="section-post__wrap-sidebar">
+                        <h2 class="title title__b-top">Mais Recentes</h2>
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                        @@include('./html-templates/mini-block.html',{})
+                    </div>
+                    <div class="section-post__wrap-sidebar">
+                        <h2 class="title title__b-top">Tags</h2>
+                        <div class="section-post__tags">
+                            <a href="#">Saúde</a>
+                            <a href="#">Demência</a>
+                            <a href="#">Dicas de Especialidades</a>
+                            <a href="#">Longevidade</a>
+                            <a href="#">Comparticipações</a>
+                            <a href="#">Gestão</a>
+                            <a href="#">Guias da cidade</a>
+                            <a href="#">Procura</a>
+                            <a href="#">Gestão</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('./html-templates/section-subscribe.html',{
+    }) 
+    <section class="section-post">
+        <div class="container">
+            <div class="section-post__wrapper">
+                <div class="section-post__blocks">
+                    @@include('./html-templates/section-post-item.html',{})
+                    @@include('./html-templates/section-post-item.html',{})
+                </div>
+                <div class="section-post__sidebar">
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    @@include('./html-templates/footer.html',{
+    }) 
+    <script src="./js/slider-init.js"></script>
+    </div> 
 </body>
-
 </html>

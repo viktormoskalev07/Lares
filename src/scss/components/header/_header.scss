@@ -32,7 +32,7 @@ $header-bgc:rgb(255, 255, 255);
     }
     
     &__logo {
-        width: 50px;
+        width: 200px;
         margin-bottom: 24px;
         @include lg{
             margin-bottom: 0;
@@ -113,8 +113,31 @@ $header-bgc:rgb(255, 255, 255);
         }
     }
     &__search{
-        max-width: 270px;
         width: 100%;
+        position: relative;
+        @include lg{
+            max-width: 270px;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            
+        }
+        circle, line{
+            stroke: #929eaf;
+        }
+        label{
+            display: flex;
+        }
+        button{
+            border: 0;
+            background: transparent;
+            @include lg{
+                position: absolute;
+                top: 12px;
+                right: 15px;
+            }
+        }
         input{
             border: 0;
             padding: 13px 18px;

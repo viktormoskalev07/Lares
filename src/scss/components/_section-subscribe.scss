@@ -4,6 +4,67 @@
     color: #fff;
     .title{
         color: #fff;
+        @include md{
+            font-size: 30px;
+        }
     }
-        
+    &__wrap{
+        @include md{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__left{
+        margin-bottom: 30px;
+        @include md{
+            width: 45%;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 14px;
+            color: #dadcdc;
+        }
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        position: relative;
+        @include md{
+            width: 30%;
+        }
+        form{
+            width: 100%;
+        }
+        input{
+            border: 0;
+            border-bottom: 1px solid #a9aaaa;
+            background: transparent;
+            width: 100%;
+            padding: 10px 0 14px;
+            color: #fff;
+            font-size: 16px;
+            &::placeholder{
+                font-size: 14px;
+            }
+            &:focus-visible{
+                outline: 0;
+            }
+        }
+        button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: transparent;
+            border: 0;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+        }
+    }
 }

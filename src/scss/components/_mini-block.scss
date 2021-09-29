@@ -1,10 +1,13 @@
 .mini-block{
     &__item{
-        display: flex;
-        align-items: center;
+        @include md{
+            display: flex;
+            align-items: center;
+        }
         margin-bottom: 25px;
     }
     &__title{
+        text-align: left;
         text-transform: none;
         margin: 0px;
         margin-bottom: 1px;
