@@ -1,0 +1,56 @@
+.form{
+    background: #515353;
+    padding: 50px 23px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    @include md{
+        margin-bottom: 85px;
+    }
+    &__title{
+        color: #fff;
+        margin: 0;
+        margin-bottom: 50px;
+        text-transform: none;
+    }
+    label{
+        display: block;
+        margin-bottom: 20px;
+    }
+    input{
+        padding: 14px 15px;
+        border-radius: 4px;
+        border: 0;
+        width: 100%;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 14px;
+        &::placeholder{
+            color: #aeb3bb;
+        }
+    }
+    button{
+        padding: 14px;
+        width: 100%;
+        background: #00a8ff;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 11px;
+        color: #dadcdc;
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__descarregar{
+
+    }
+}
