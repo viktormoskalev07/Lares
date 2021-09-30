@@ -28,7 +28,7 @@ $header-bgc:rgb(255, 255, 255);
     transition: 0.3s;
     box-shadow: 0 2px 4px 0 rgba(230, 230, 230, 0.5);
     @include lg{
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
     
     &__logo {
