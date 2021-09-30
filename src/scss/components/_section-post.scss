@@ -128,9 +128,6 @@
             align-items: center;
             margin: 0px 0 60px;
         }
-        // &:last-child{
-        //     margin-bottom: 0;
-        // }
     }
     &__sidebar{
         .title__b-top{
@@ -142,6 +139,9 @@
                 display: block;
                 .title{
                     font-size: 22px;
+                }
+                &:last-child{
+                    margin-bottom: 30px;
                 }
             }
             .section-post__img{
@@ -172,7 +172,7 @@
     }
     &__wrap-sidebar{
         padding: 0 20px;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         @include md{
             padding: 0;
         }

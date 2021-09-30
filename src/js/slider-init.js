@@ -5,14 +5,14 @@ if (document.querySelector('.HomepageSwiperInit')){
       loop:true,
       grabCursor:'true',
       pagination: {
-        el: "hp-pagination-init",
+        el: ".section-slider__pagination",
         clickable: true,
       },
-      // navigation: {
-      //     nextEl: '.hp-next-init',
-      //     prevEl: '.hp-prev-init',
-      //   },
       breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
         640: {
           slidesPerView: 2,
           spaceBetween: 20,

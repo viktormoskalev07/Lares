@@ -1,0 +1,41 @@
+.section-slider{
+    background: #f5f6f6;
+    .swiper-wrapper{
+        align-items: center;
+        padding: 30px 0 50px;
+        @include md{
+            padding: 72px 0 85px;
+        }
+    }
+    &__img{
+        max-width: 230px;
+        margin: 0 auto;
+    }
+    &__pagination{
+        bottom: 25px !important;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet{
+        width: 7px;
+        height: 7px;
+        background: #dadcdc;
+        opacity: 1;
+        margin: 0 7px !important;
+        &.swiper-pagination-bullet-active{
+            width: 10px;
+            height: 10px;
+            background: #797c7c;
+        }
+        @include md{
+            width: 10px;
+            height: 10px;
+            margin: 0 10px !important;
+            &.swiper-pagination-bullet-active{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}

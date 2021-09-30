@@ -24,6 +24,25 @@
                 <img src="./images/icons/logo-header.svg" alt="logo-header">
             </a>
         </div>
+        <nav>
+            <ul style="display: flex; list-style: none; color: blue;">
+                <li style="padding: 0 5px;">
+                    <a href="index.html" title="index.html">index</a>
+                </li>
+                <li style="padding: 0 5px;">
+                    <a href="homepage-list.html" title="homepage-list.html">home-list</a>
+                </li>
+                <li style="padding: 0 5px;">
+                    <a href="homepage-thumbnails.html" title="homepage-thumbnails.html">home-thu</a>
+                </li>
+                <li style="padding: 0 5px;">
+                    <a href="homepage-categories.html" title="homepage-categories.html">categories</a>
+                </li>
+                <li style="padding: 0 5px;">
+                    <a href="post.html" title="post.html">post</a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__search">
             <form action="">
                 <label for="headerSearch">
@@ -309,26 +328,34 @@
         </div>
     </section>
     <section class="section-slider">
+    <div class="container">
         <div class="swiper-container HomepageSwiperInit">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">
+                    <div class="section-slider__img">
+                        <img src="./images/logo-slider/logo-slider-1.png" alt="logo-slider">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="section-slider__img">
+                        <img src="./images/logo-slider/logo-slider-2.png" alt="logo-slider">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="section-slider__img">
+                        <img src="./images/logo-slider/logo-slider-3.png" alt="logo-slider">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="section-slider__img">
+                        <img src="./images/logo-slider/logo-slider-4.png" alt="logo-slider">
+                    </div>
+                </div>
             </div>
-            <div class="swiper-pagination hp-pagination-init"></div>
+            <div class="swiper-pagination section-slider__pagination"></div>
         </div> 
-        <style>
-            /* remove it */
-            .swiper-slide{
-                background-color: #f5f6f6;
-                padding: 25px;
-                border: solid rgb(196, 136, 136) 1px;
-                background-clip: content-box;
-                height: 300px;
-            }
-          </style>
-    </section>
+    </div>
+</section>
     <section class="section-post">
         <div class="container">
             <div class="section-post__wrapper">
@@ -469,7 +496,7 @@
     <section class="section-post">
         <div class="container">
             <div class="section-post__wrapper">
-                <div class="section-post__small-block">
+                <div class="section-post__blocks section-post__blocks_two small-block">
                     <div class="section-post__item">
     <div class="section-post__img">
         <figure> 
@@ -480,14 +507,14 @@
     </div>
     <div class="section-post__content">
         <span class="section-post__mark">Reforma em Portugal</span>
-        <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+        <h2 class="title">Lorem ipsum dolor sit amet, consectetur elit.</h2>
         <div class="section-post__user">
             <div class="section-post__icon">
                 <img src="images/icons/elements-avatar-thumb-profile.jpg" alt="elements-avatar-thumb-profile">
             </div>
-            <p>Rickie Baroch - <span>June 6, 2021</span></p>
+            <p>Rickie Baroch - June 6, 2021</p>
         </div>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
         <div class="section-post__link">
             <button>Ler Mais
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -498,7 +525,7 @@
     </div>
 </div>
                 </div>
-                <div class="section-post__big-block">
+                <div class="section-post__blocks section-post__blocks_two big-block">
                     <div class="section-post__item">
     <div class="section-post__img">
         <figure> 
@@ -509,14 +536,14 @@
     </div>
     <div class="section-post__content">
         <span class="section-post__mark">Reforma em Portugal</span>
-        <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+        <h2 class="title">Lorem ipsum dolor sit amet, consectetur elit.</h2>
         <div class="section-post__user">
             <div class="section-post__icon">
                 <img src="images/icons/elements-avatar-thumb-profile.jpg" alt="elements-avatar-thumb-profile">
             </div>
-            <p>Rickie Baroch - <span>June 6, 2021</span></p>
+            <p>Rickie Baroch - June 6, 2021</p>
         </div>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
         <div class="section-post__link">
             <button>Ler Mais
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -630,7 +657,10 @@
 </footer>
 <script >
     const templateUrl = '<?php= get_bloginfo("template_url"); ?>';
- </script> 
+ </script>
+
+<script src="js/main.js"></script>
+<script src="js/swiper-min.js"></script> 
     <script src="./js/slider-init.js"></script>
     </div> 
 </body>
