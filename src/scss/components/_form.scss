@@ -1,0 +1,104 @@
+.form{
+    background: #515353;
+    padding: 50px 23px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    @include md{
+        margin-bottom: 85px;
+    }
+    
+    &__title{
+        color: #fff;
+        margin: 0;
+        margin-bottom: 50px;
+        text-transform: none;
+    }
+    textarea{
+        resize: none;
+    }
+    label{
+        display: block;
+        margin-bottom: 20px;
+    }
+    input{
+        padding: 14px 15px;
+        border-radius: 4px;
+        border: 0;
+        width: 100%;
+        font-family: "Lato";
+        font-size: 14px;
+        &::placeholder{
+            color: #aeb3bb;
+        }
+    }
+    button{
+        padding: 14px;
+        width: 100%;
+        text-transform: uppercase;
+        background: #00a8ff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 15px;
+        transition: .3s;
+        &:hover{
+            background: #fff;
+            color: #00a8ff;
+            border: 1px solid #00a8ff;
+        }
+    }
+    p{
+        font-size: 11px;
+        color: #dadcdc;
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__descarregar{
+        .form__title{
+            font-size: 28px;
+            span{
+                display: block;
+            }
+        }
+        .accent-title{
+            color: #ffc400;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+    }
+    &_light{
+        background: #fff;
+        margin: 0 !important;
+        padding: 0;
+        input, textarea{
+            display: block;
+            background: #fcfcfc;
+            border: 1px solid #dadcdc;
+            margin-top: 7px;
+            border-radius: 3px;
+        }
+        textarea{
+            display: block;
+            width: 100%;
+        }
+        label{
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+        button{
+            display: inline-block;
+            width: auto;
+            min-width: 190px;
+            letter-spacing: 1.6px;
+            font-size: 16px;
+        }
+    }
+}

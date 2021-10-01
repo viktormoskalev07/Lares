@@ -137,6 +137,7 @@
             width: 370px;
             .section-post__item{
                 display: block;
+                margin: 40px 0 60px;
                 .title{
                     font-size: 22px;
                 }
@@ -172,7 +173,7 @@
     }
     &__wrap-sidebar{
         padding: 0 20px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         @include md{
             padding: 0;
         }
@@ -291,6 +292,15 @@
                 border: 1px solid #00a8ff;
                 color: #00a8ff;
             }
+        }
+    }
+    &__social{
+        margin: 20px -6px 30px;
+        @include md{
+            margin: 20px -6px 50px;
+        }
+        a{
+            margin: 0 6px;
         }
     }
 }
