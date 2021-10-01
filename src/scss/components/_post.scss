@@ -8,16 +8,22 @@
             font-size: 28px;
         }
     }
+    &__content{
+        @include xl{
+            padding-right: 50px;
+        }
+    }
     &__container{
         max-width: 1240px;
         margin: 0 auto;
         @include md{
             padding: 0 20px;
         }
+        
     }
     &__wrapper{
-        margin-top: 60px;
         @include xl{
+            margin-top: 60px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -46,14 +52,14 @@
     }
     &__context{
         margin-bottom: 50px;
-        max-width: 750px;
         background: #fff;
         padding: 40px 25px 35px 15px;
         position: relative;
         z-index: 1;
         border-radius: 0 3px 0 0;
         box-shadow: 0 4px 14px 0 rgba(222, 222, 222, 0.5);
-        @include lg{
+        @include xl{
+            max-width: 750px;
             padding: 45px 55px 27px;
             margin-top: -140px;
             margin-bottom: 75px;
