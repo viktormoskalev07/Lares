@@ -1,0 +1,38 @@
+.social {
+	display: flex;
+	justify-content: center;
+	@include lg {
+		justify-content: flex-start;
+		margin: 0 -7px;
+	}
+	&__icon {
+		display: flex;
+		width: 30px;
+		height: 30px;
+		margin: 0 13px;
+		border-radius: 50%;
+		background-color: #e5e5e5;
+		svg {
+			height: 15px;
+			margin: auto;
+			fill: #ffffff;
+		}
+		@include lg {
+			margin: 0 7px;
+		}
+
+		&.facebook:hover {
+			background-color: #3b5998;
+		}
+		&.instagram:hover {
+			background: linear-gradient(348deg, #ffd961 0%,#ff7500 25%,#eb0077 50%,#a51bc6 75%,#4d59dd 100%);
+		}
+		&.twitter:hover {
+			background-color: #55acee;
+
+		}
+      &.linkedin:hover {
+         background-color: #007ab9;
+      }
+	}
+}

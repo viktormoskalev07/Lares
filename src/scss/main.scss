@@ -1,28 +1,29 @@
- 
+
   @use 'sass:math';
 
-  @import 'components/base';  
-  @import 'components/_var';   
+  @import 'components/base';
+  @import 'components/_var';
    @import 'components/header/header';
    @import 'components/grid';
    @import 'components/sections';
    @import 'components/button';
+   @import 'components/social';
    @import 'components/card';
    @import 'components/fonts';
    @import 'components/footer';
-   @import 'components/popup'; 
-   @import 'components/list';   
-   @import 'components/hero';   
-   @import 'components/section-post';   
+   @import 'components/popup';
+   @import 'components/list';
+   @import 'components/hero';
+   @import 'components/section-post';
    @import 'components/mini-block';
-   @import 'components/section-subscribe'; 
-   @import 'components/post'; 
-   @import 'components/section-slider'; 
+   @import 'components/section-subscribe';
+   @import 'components/post';
+   @import 'components/section-slider';
 
 
- 
 
- 
+
+
 
 
 @import 'modules/modules.scss'
