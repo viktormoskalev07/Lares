@@ -1,0 +1,168 @@
+.autores{
+    margin-bottom: 85px;
+    &__title{
+        text-align: center;
+        margin-bottom: 55px;
+        h1{
+            margin: 0;
+            font-size: 32px;
+            text-transform: none;
+            display: inline-block;
+            font-weight: 700;
+            border-bottom: 2px solid #171717;
+            padding-bottom: 25px;
+        }
+    }
+    &__container{
+        .container{
+            padding: 0;
+            @include md{
+                padding: 0 20px;
+            }
+        }
+        .autores__title{
+            padding: 0 20px;
+            @include md{
+                padding: 0;
+            }
+        }
+        .autores__card{
+            padding: 0 20px;
+            @include md{
+                padding: 35px 30px 50px;
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        @include md{
+            margin: 0 -25px;
+            margin-bottom: 100px;
+        }
+    }
+    &__wrapper-user{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include md{
+            margin-bottom: 70px;    
+        }
+        .autores__card{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 50px;
+            @include xl{
+                width: 350px; 
+                margin: 0;
+                margin-right: 60px;
+            }
+        }
+        .section-post__blocks{
+            @include xl{
+                width: calc(100% - 420px);
+            }
+        }
+        .autores__text{
+            margin-bottom: 25px;
+        }
+        .section-post__item{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .section-post__user{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+        .section-post__content{
+            p{
+                height: 40px;
+                overflow: hidden;
+                color: #797c7c;
+                @include  md{
+                    height: auto;
+                }
+            }
+        }
+    }
+    &__card{
+        text-align: center;
+        width: 100%;
+        border-radius: 4px;
+        background: #fff;
+        padding: 35px 0 50px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include md{
+            width: calc(50% - 50px);
+            margin: 0 25px 50px;
+            padding: 35px 30px 50px;
+            box-shadow: 0 2px 20px 0 rgba(221, 221, 221, 0.5);
+        }
+        @include xl{
+            width: calc(33% - 50px); 
+        }
+    }
+    &__img{
+        width: 160px;
+        height: 160px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 0 auto 25px;
+    }
+    &__name{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__profession{
+        font-size: 14px;
+        color: #999;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: #666;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+    &__link{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        a{
+            color: #00a8ff;
+            font-size: 17px;
+            display: inline-block;
+            position: relative;
+            margin-left: -20px;
+            &:hover{
+                img{
+                    right: -50px;
+                }
+            }
+        }
+        img{
+            position: absolute;
+            top: 0;
+            right: -40px;
+            transition: .3s;
+            margin-left: 12px;
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+    .button{
+        text-align: center;
+    }
+}

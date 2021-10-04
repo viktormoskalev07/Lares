@@ -28,3 +28,22 @@ if (document.querySelector('.HomepageSwiperInit')){
       },
   });
 }
+
+if (document.querySelector('.CategoriesSwiperInit')){
+  var swiperHomapage = new Swiper(".CategoriesSwiperInit", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop:true,
+      grabCursor:'true',
+      pagination: {
+        el: ".section-slider__pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      },
+  });
+}

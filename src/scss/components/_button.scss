@@ -1,25 +1,25 @@
-$main-button:green;
+$main-button:#00a8ff;
 $main-button-hover:rgb(9, 65, 9);
- button{
-   cursor: pointer;
- }
-.button{
-    width: 100%;
-    display: inline-block;
-    padding:10px 25px;
-    background-color: $main-button;
-    border:solid $main-button;
-    font-size: 24px;
-    color:white;
-    border-radius: 4px;
-      cursor: pointer;
+button{
+  cursor: pointer;
+}
+.button a{
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: $main-button;
+  border: 1px solid $main-button;
+  font-size: 16px;
+  color:white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
   }
-  
-  .button:hover{
-    color:red;
-    background-color: white;
-  }
-  
+.button a:hover{
+  color:$main-button;
+  background-color: white;
+}
+
   
  
 
