@@ -23,6 +23,9 @@
       display: block;
       max-width: 200px;
     }
+    img {
+        filter: brightness(0) invert(1);
+    }
     a {
       display: block;
       &:hover {
