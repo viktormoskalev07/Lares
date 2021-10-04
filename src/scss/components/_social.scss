@@ -15,7 +15,12 @@
 		svg {
 			height: 15px;
 			margin: auto;
-			fill: #ffffff;
+			fill: #344154;
+		}
+		&:hover {
+			svg {
+				fill: #ffffff;
+			}
 		}
 		@include lg {
 			margin: 0 7px;
@@ -33,6 +38,9 @@
 		}
       &.linkedin:hover {
          background-color: #007ab9;
+      }
+		&.youtube:hover {
+         background-color: #FF0000;
       }
 	}
 }
