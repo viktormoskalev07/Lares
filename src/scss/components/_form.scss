@@ -2,6 +2,8 @@
     background: #515353;
     padding: 50px 23px;
     border-radius: 3px;
+    max-width: 1440px;
+    margin: 0 auto;
     margin-bottom: 40px;
     @include md{
         margin-bottom: 85px;
@@ -15,6 +17,7 @@
     }
     textarea{
         resize: none;
+        padding: 14px 15px;
     }
     label{
         display: block;
@@ -102,6 +105,7 @@
         }
     }
     &__section{
+        
         @include lg{
             display: flex;
             justify-content: space-between;

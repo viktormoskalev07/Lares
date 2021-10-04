@@ -2,6 +2,8 @@
     background: #515353;
     padding: 74px 0 58px;
     color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
     .title{
         color: #fff;
         @include md{

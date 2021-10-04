@@ -9,7 +9,6 @@ $header-bgc:rgb(255, 255, 255);
         @content
     };
 }
-
 .scroll-hidden{
     @include nav-mobile{
         overflow: hidden;
@@ -19,7 +18,6 @@ $header-bgc:rgb(255, 255, 255);
     color: #515353;
     z-index: 5;
     max-width: 100%;
-    overflow: hidden;
     position: sticky;
     top: 0;
     left: 0;
@@ -27,10 +25,6 @@ $header-bgc:rgb(255, 255, 255);
     background-color: $header-bgc;
     transition: 0.3s;
     box-shadow: 0 2px 4px 0 rgba(230, 230, 230, 0.5);
-    @include lg{
-        padding-bottom: 50px;
-    }
-
     &__logo {
         max-width: 200px;
         margin-bottom: 24px;
@@ -58,12 +52,23 @@ $header-bgc:rgb(255, 255, 255);
         }
     }
     &__bottom{
-        position: absolute;
         bottom: 0;
         width: 100%;
         border: 0;
         @include lg{
             border-top: 1px solid#979797;
+        }
+    }
+    &__sub-menu{
+        opacity: 0;
+        position: absolute;
+        background: #fff;
+        width: auto;
+        height: auto;
+        transition: .3s;
+        ul{
+            display: flex;
+            flex-direction: column;
         }
     }
     &__menu{
@@ -72,10 +77,8 @@ $header-bgc:rgb(255, 255, 255);
             max-height: 0;
             opacity: 0;
             pointer-events: none;
-            // transition: 0.4s;
             padding: 0;
             margin: 0;
-            overflow: hidden;
             @include nav-desktop {
                 display: flex;
                 justify-content: center;
@@ -86,35 +89,67 @@ $header-bgc:rgb(255, 255, 255);
         }
         li{
             text-transform: uppercase;
-            // transform: translateX(+100%);
-            margin: 10px 0;
+            transform: translateX(+100%);
+            display: block;
+            margin: 0;
+            transition: 0.5s;
+            position: relative;
+            @include xl{
+                margin: 10px 0;
+            }
             a{
-                padding: 10px 0px;
+                padding: 20px 0px;
                 width: 100%;
                 display: block;
+                position: relative;
+                &:hover {
+                    background-color: #00a8ff;
+                    transition: 0.2s;
+                    color: #fff;
+                    
+                }
             }
             &:nth-child(2n) {
-                // transform: translateX(-100%);
+                transform: translateX(-100%);
             }
             @include nav-desktop {
-                margin: 0 10px;
+                margin: 0;
                 a {
-                    padding: 15px;
+                    padding: 15px 30px;
                 }
-                // transform: none;
+                transform: none;
                 &:nth-child(2n) {
-                    // transform: none;
+                    transform: none;
                 }
             }
-            display: block;
-            // transition: 0.5s;
-            &:hover {
-                background-color: #00a8ff;
-                transition: 0.2s;
-                color: #fff;
+            @include xl{
+                &:hover{
+                    background-color: #00a8ff;
+                    transition: 0.3s;
+                    color: #fff;
+                    height: auto;
+                    display: block;
+                    .header__sub-menu{
+                        opacity: 1;
+                        background-color: #00a8ff;
+                        padding-bottom: 50px;
+                        a{
+                            &:hover{
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active{
+                .header__sub-menu{
+                    position: relative;
+                    opacity: 1;
+                }
             }
         }
     }
+    
     &__search{
         width: 100%;
         position: relative;
@@ -160,14 +195,37 @@ $header-bgc:rgb(255, 255, 255);
         .header{
             &__top{
                 width: 100%;
-                margin-bottom: 30px;
+                margin-bottom: 0;
+                .header__search{
+                    display: none;
+                }
+                .header__logo{
+                    margin-bottom: 0;
+                }
+                nav{
+                    display: none;
+                }
             }
             &__bottom{
-                bottom:30px;
+                position: static;
                 opacity:1;
-                pointer-events: all;
                 transition:  0.4s;
                 transition-delay: 0.4s;
+            }
+            &__menu{
+                ul{
+                    opacity: 1;
+                    max-height: none;
+                    background: #f5f6f6;
+                    pointer-events: all;
+                }
+                li{
+                    border-top: 1px solid #dadcdc;
+                    transform: none;
+                    &:last-child{
+                        border-bottom: 1px solid #dadcdc;
+                    }
+                }
             }
         }
     }

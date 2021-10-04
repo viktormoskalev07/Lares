@@ -15,7 +15,7 @@ function togglenav() {
   }
 }
 navBtn.addEventListener("click", togglenav);
-const links = header.querySelectorAll('a');
-links.forEach(link => {
-  link.addEventListener('click', closenav);
-});
+// const links = header.querySelectorAll('a');
+// links.forEach(link => {
+//   link.addEventListener('click', closenav);
+// });
