@@ -9,6 +9,13 @@
     text-align: left;
     color: #fff;
   }
+  &__menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
   &__top{
     .footer__copyright{
       display: none;
