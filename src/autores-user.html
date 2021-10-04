@@ -1,0 +1,53 @@
+@@include('html-templates/head.html',{
+    title:'Sonia Measck',
+    metadesc:'Lares'
+    })
+    <main class="main"> 
+        <section class="autores autores__container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="autores.html">Autores</a>
+                    </li>
+                    <li>
+                        <a href="autores-user.html">Sonia Measck</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="autores__title">
+                    <h1>Artigos de Sonia Measck</h1>
+                </div>
+                <div class="autores__wrapper-user">
+                    <div class="autores__card">
+                        <div class="autores__wrap">
+                            <div class="autores__img">
+                                <img src="./images/user-foto.jpg" alt="autores img">
+                            </div>
+                            <p class="autores__name">Sonia Measck</p>
+                            <p class="autores__profession">Food & cooking bloger</p>
+                            <p class="autores__text">Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on the Internet!</p>
+                            <p class="autores__text">Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on the Internet!</p>
+                        </div>
+                    </div>
+                    <div class="section-post__blocks">
+                        @@include('./html-templates/section-post-item.html',{})
+                        @@include('./html-templates/section-post-item.html',{})
+                        @@include('./html-templates/section-post-item.html',{})
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#">show more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./html-templates/footer.html',{
+    }) 
+    <script src="./js/slider-init.js"></script>
+    </div> 
+</body>
+</html>

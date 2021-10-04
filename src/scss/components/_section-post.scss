@@ -19,12 +19,37 @@
     .title{
         line-height: 1.2;
     }
+    &__item{
+        margin: 35px 0;
+        @include md{
+            display: flex;
+            align-items: center;
+            margin: 0px 0 60px;
+        }
+        .autores__link{
+            text-align: left;
+            justify-content: flex-start;
+            a{
+                margin: 0;
+            }
+        }
+    }
     &__blocks{
         @include xl{
             width: calc(100% - 440px);
         }
+        @include md{
+            .autores__link{
+                justify-content: flex-end;
+            }
+        }
         &_two{
             @include md{
+                .autores__link{
+                    justify-content: flex-start;
+                    margin-top: 18px;
+
+                }
                 .title{
                     margin-bottom: 10px;
                 }
@@ -121,14 +146,7 @@
             }
         }
     }
-    &__item{
-        margin: 35px 0;
-        @include md{
-            display: flex;
-            align-items: center;
-            margin: 0px 0 60px;
-        }
-    }
+    
     &__sidebar{
         .title__b-top{
             margin-bottom: 24px;
@@ -165,9 +183,6 @@
             }
             .section-post__user{
                 display: none;
-            }
-            .section-post__link button{
-                margin-left: 0;
             }
         }
     }
@@ -252,28 +267,6 @@
         overflow: hidden;
         margin-right: 18px;
     }
-    &__link{
-        margin-top: 20px;
-        @include md{
-            margin-top: 0px;
-        }
-        button{
-            color: #00A9FF;
-            font-size: 17px;
-            border: 0;
-            background: transparent;
-            display: flex;
-            align-items: center;
-            @include md{
-                margin-left: auto;
-            }
-        }
-        svg{
-            @include sm{
-                margin-left: 20px;
-            }
-        }
-    }
     &__tags{
         display: flex;
         margin: 0 -8px;
@@ -302,5 +295,23 @@
         a{
             margin: 0 6px;
         }
+    }
+    &__tree-blocks{
+        .section-post__blocks_two{
+            @include xl{
+                width: 100%;
+                .section-post__item{
+                    width: 50%;
+                }
+            }
+            @include xxl{
+                width: 100%;
+                .section-post__item{
+                    width: calc(33% - 40px);
+                }
+            }
+            
+        }
+        
     }
 }

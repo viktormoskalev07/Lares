@@ -12,6 +12,12 @@
             padding: 0 20px;
         }
     }
+    .autores__link{
+        justify-content: flex-start;
+        a{
+            margin-left: 0;
+        }
+    }
     &__img{
         overflow: hidden;
         @include md{

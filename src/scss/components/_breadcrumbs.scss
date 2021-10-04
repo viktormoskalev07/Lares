@@ -1,0 +1,28 @@
+.breadcrumbs{
+    margin: 50px auto 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    @media screen and(min-width:1240px){
+        padding: 0;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            border-right: 2px solid #171717;
+            &:last-child{
+                border: 0;
+                color: #00a8ff;
+            }
+        }
+        a{
+            padding: 0 5px;
+        }
+    }
+}

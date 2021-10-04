@@ -1,0 +1,45 @@
+@@include('html-templates/head.html',{
+    title:'Autores',
+    metadesc:'Lares'
+    })
+    <main class="main"> 
+        <section class="autores">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="autores.html">Autores</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="autores__title">
+                    <h1>Autorest</h1>
+                </div>
+                <div class="autores__wrapper">
+                    @@loop('./html-templates/autores-card.html',[
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    {name:'Sonia Measck'},
+                    ])
+                </div>
+                <div class="button">
+                    <a href="#">show more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./html-templates/footer.html',{
+    }) 
+    <script src="./js/slider-init.js"></script>
+    </div> 
+</body>
+</html>
