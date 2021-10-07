@@ -14,11 +14,11 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        li{
-            border-right: 2px solid #171717;
-            &:last-child{
-                border: 0;
-                color: #00a8ff;
+        li.current{
+            border: 0;
+            color: #00a8ff;
+            span {
+                padding: 0 5px;
             }
         }
         a{
