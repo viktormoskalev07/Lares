@@ -66,6 +66,29 @@
         .section-slider__title{
             max-width: 350px;
         }
+        .swiper-pagination-bullets{
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            opacity: .5;
+            background: #797c7c;
+            width: 150px !important;
+            padding: 6px 0;
+            border-radius: 11px;
+            margin: 0 auto;
+            .swiper-pagination-bullet{
+                width: 7px;
+                height: 7px;
+                background: #dadcdc;
+            }
+            .swiper-pagination-bullet-active{
+                width: 10px !important;
+                height: 10px !important;
+                background: #dadcdc;
+            }
+        }
+        
+        
     }
     &__title{
         margin: 0;
