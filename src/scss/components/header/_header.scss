@@ -28,15 +28,28 @@
 		padding-bottom: 50px;
 	}
 	&__logo {
-		max-width: 200px;
+		display: flex;
+		align-items: center;
 		margin-bottom: 24px;
 		@include nav-desktop {
 			margin-bottom: 0;
 		}
 		a {
 			display: block;
+			span{
+				color:#00a8ff;
+				font-size: 20px;
+				font-weight: bold;
+				display: block;
+				margin: 5px 0px 0 17px;
+				text-transform: uppercase;
+				padding-left: 12px;
+				border-left: 3px solid #00a8ff;
+				line-height: 1;
+			}
 		}
 		img {
+			max-width: 200px;
 			object-fit: contain;
 			width: 100%;
 			height: auto;

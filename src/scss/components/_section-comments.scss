@@ -1,0 +1,58 @@
+.section-comments{
+    margin-bottom: 30px;
+    color: #222;
+    @include md{
+        margin-bottom: 50px;
+    }
+    &__number{
+        padding: 10px 0;
+        border-bottom: 1px solid#e8e8e8;
+        font-size: 22px;
+    }
+    &__item{
+        padding: 35px 0 30px;
+        position: relative;
+        border-bottom: 1px solid#e8e8e8;
+        &:nth-child(2){
+            @include md{
+                padding: 30px 0;
+                padding-left: 100px;
+            }
+        }
+    }
+    &__text{
+        font-size: 12px;
+        line-height: 1.8;
+        @include md{
+            font-size: 17px;
+        }
+    }
+    &__name{
+        margin: 0;
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.2;
+        @include md{
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+    }
+    &__data{
+        font-weight: bold;
+        line-height: 1.2;
+        font-size: 12px;
+        @include md{
+            font-size: 17px;
+        }
+    }
+    &__responder{
+        letter-spacing: 1.06px;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        color: #b4b4b4;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
