@@ -42,25 +42,67 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="section-comments">
-                            <div class="section-comments__number">25 Comments</div>
-                            <div class="section-comments__wrap">
-                                @@include('./html-templates/section-comments-item.html',{
-                                    name:'Julie Gomez',
-                                    data:'04.09.2021',
-                                    text:'Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.',
-                                })
-                                @@include('./html-templates/section-comments-item.html',{
-                                    name:'Rose Diaz',
-                                    data:'04.09.2021',
-                                    text:'Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.',
-                                })
-                                @@include('./html-templates/section-comments-item.html',{
-                                    name:'Kimberly Hanson',
-                                    data:'04.09.2021',
-                                    text:'Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.',
-                                })
-                            </div>
+                        <div class="comment">
+                            <div class="comment__number">25 Comments</div>
+                            <ol class="comment__list">
+                                <li class="comment__item">
+                                    <article class="comment__body">
+                                        <div class="comment__author">
+                                            <a href="#">Julie Gomez</a>
+                                        </div>
+                                        <div class="comment__metadata">
+                                            <a href="#">
+                                                <time datetime="2021-09-04">04.09.2021</time>
+                                            </a>
+                                        </div>
+                                        <div class="comment__content">
+                                            <p>Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.</p>
+                                        </div>
+                                        <div class="comment__reply">
+                                            <a class="comment__reply-link" href="#">Responder</a>
+                                        </div>
+                                    </article>
+                            
+                                    <ol class="comment__children">
+                                        <li class="comment__item">
+                                            <article class="comment__body">
+                                                <div class="comment__author">
+                                                    <a href="#">Rose Diaz</a>
+                                                </div>
+                                                <div class="comment__metadata">
+                                                    <a href="#">
+                                                        <time datetime="2021-09-04">04.09.2021</time>
+                                                    </a>
+                                                </div>
+                                                <div class="comment__content">
+                                                    <p>Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.</p>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    <a class="comment__reply-link" href="#">Responder</a>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="comment__item">
+                                    <article class="comment__body">
+                                        <div class="comment__author">
+                                            <a href="#">Kimberly Hanson</a>
+                                        </div>
+                                        <div class="comment__metadata">
+                                            <a href="#">
+                                                <time datetime="2021-09-04">04.09.2021</time>
+                                            </a>
+                                        </div>
+                                        <div class="comment__content">
+                                            <p>Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party.</p>
+                                        </div>
+                                        <div class="comment__reply">
+                                            <a class="comment__reply-link" href="#">Responder</a>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ol>
                         </div>
                         <div class="form form_light">
                             <form action="">
