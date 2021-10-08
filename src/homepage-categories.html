@@ -107,6 +107,25 @@ metadesc:'Lares'
     </div>
 
   </section>
+  <section class="recommend">
+    <div class="container">
+      <h2 class="title title__b-top">Outras categorias</h2>
+      <div class="recommend__wrap">
+        @@include('./html-templates/recommend-item.html',{
+          title:'Lares de Idosos',
+          img:'LO-LaresIdosos.jpg',
+        })
+        @@include('./html-templates/recommend-item.html',{
+          title:'Apoio Domiciliário',
+          img:'LO-ApoioDomiciliario.jpg',
+        })
+        @@include('./html-templates/recommend-item.html',{
+          title:'Reforma em Portugal',
+          img:'LO-ReformaPortugal.jpg',
+        })
+      </div>
+    </div>
+  </section>
 @@include('./html-templates/section-subscribe.html',{
 })
 </main>
