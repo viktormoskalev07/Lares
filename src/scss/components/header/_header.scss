@@ -40,12 +40,15 @@
 				color:#00a8ff;
 				font-size: 20px;
 				font-weight: bold;
-				display: block;
+				display: none;
 				margin: 5px 0px 0 17px;
 				text-transform: uppercase;
 				padding-left: 12px;
 				border-left: 3px solid #00a8ff;
 				line-height: 1;
+				@include lg {
+					display: block;
+				}
 			}
 		}
 		img {
