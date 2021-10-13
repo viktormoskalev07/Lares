@@ -1,4 +1,68 @@
-<div class="form-overlay" id="form-overlay"></div>
+<button class="modal-button" data-modal="#modal-contact">
+	<img src="/images/icons/Lara-Avatar-61x66.png" alt="contact form label" />
+	<span>Precisa de ajuda na procura de um lar?</span>
+</button>
+
+<div class="modal" id="modal-contact">
+	<div class="modal-dialog">
+		<button class="modal-close" type="button" data-close>
+			<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+				<g fill="none" fill-rule="evenodd">
+					<circle fill="#E5E5E5" cx="12" cy="12" r="12" />
+					<path fill="#000" fill-rule="nonzero" d="m17.104 7.746-.826-.825-4.253 4.254L7.77 6.921l-.825.825L11.199 12l-4.254 4.254.825.825 4.255-4.254 4.253 4.254.826-.825L12.849 12z" />
+				</g>
+			</svg>
+		</button>
+
+		<form class="modal-content contact-form">
+			<header class="modal-header">
+				<img src="/images/icons/Lara-Avatar-61x66.png" alt="contact form label" />
+				<h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, hic?</h3>
+			</header>
+			<div class="modal-body">
+				<fieldset class="contact-form-radio">
+					<legend>Procuro para:</legend>
+
+					<input type="radio" name="para" id="para1" value="Uma pessoa" checked />
+					<label for="para1">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
+							<g fill="none" fill-rule="evenodd">
+								<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
+								<g transform="translate(15 10)">
+									<path
+										fill="#00A8FF"
+										d="m7.57 12.78.801 7.084s.061.475.061.971l-.002 4.646c0 1.533-2.31 1.532-2.31 0l.003-4.95-.412-3.632c-.014-.128-.169-.126-.177-.002l-.376 3.411a6.2 6.2 0 0 1-.173.945c-.052.226-1.103 4.487-1.103 4.487-.367 1.488-2.609.942-2.243-.546l1.193-4.85.762-7.557-.074-4.043-1.045 1.395-.789 4.102c-.244 1.245-1.895.827-1.664-.281.38-1.818.527-2.857.648-3.56.166-.963.282-1.299.875-2.154.621-.862 1.466-2.031 2.22-3.073.232-.322.584-.574.993-.574h1.631c.482 0 .916.327 1.087.761l2.447 5.518 2.367 1.941c1.073.819-.115 2.149-1.031 1.425-1.555-1.227-2.124-1.545-2.507-2.025-.33-.413-.544-.921-1.2-2.14 0 0 .013 2.659.018 2.702m.494-10.753c0 1.12-.914 2.03-2.04 2.03a2.034 2.034 0 0 1-2.039-2.03C3.985.908 4.898 0 6.023 0 7.15 0 8.064.909 8.064 2.028m5.46 12.087c1.105 0 2.001.892 2.001 1.993v9.942c0 .783-1.178.783-1.178 0v-9.942c0-.454-.37-.82-.824-.82-.785 0-.785-1.173 0-1.173"
+									/>
+								</g>
+							</g>
+						</svg>
+						Uma pessoa
+					</label>
+
+					<input type="radio" name="para" id="para2" value="Casal" />
+					<label for="para2">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
+							<g fill="none" fill-rule="evenodd">
+								<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
+								<g transform="translate(9 10)">
+									<path
+										fill="#00A8FF"
+										d="M11.832 12.607 9.46 10.724 6.996 5.338l-.01-.021-.006-.012-.002-.002c-.19-.387-.601-.672-1.056-.672H4.287c-.415 0-.791.238-.998.573-.032.037-.066.07-.096.11C-.496 10.358.557 7.908.004 13.869c-.102 1.094 1.628 1.319 1.725.119l.273-3.98 1.045-1.354.076 4.5-.765 6.758-1.195 4.704c-.366 1.445 1.88 1.974 2.247.53 0 0 1.053-4.135 1.105-4.353.104-.412.126-.54.174-.918l.374-3.308.001-.001c.01-.122.157-.146.177.002l.003.005.41 3.52-.001 4.802c0 1.486 2.313 1.487 2.313 0l.002-4.508c0-.481-.061-.944-.061-.944l-.803-6.873c-.004-.035-.015-.065-.021-.1.002-.03.005-.062.005-.09V9.95c.655 1.178.87 1.676 1.2 2.076.383.465.954.775 2.51 1.965.919.702 2.108-.588 1.034-1.383zM5.606 4.086c1.136 0 2.06-.888 2.06-1.984S6.741.118 5.605.118c-1.137 0-2.058.888-2.058 1.984s.921 1.984 2.058 1.984zm22.4 11.52c-.001-1.06-.891-1.918-1.991-1.92a.566.566 0 0 0-.576.555c0 .307.258.556.576.556v-.001c.463 0 .839.363.839.81v9.846c0 .307.257.556.575.556a.566.566 0 0 0 .577-.556v-9.845zm-9.192 9.284c0 1.487 1.97 1.487 1.972.002v-3.79h-2.079l.107 3.788zm5.618-12.242-2.084-1.73-2.534-5.586a.117.117 0 0 1-.007-.016L19.8 5.3l-.004-.003c-.188-.387-.6-.67-1.054-.67h-1.635c-.414 0-.791.237-.998.57-.032.04-.066.07-.098.113-3.633 4.97-2.624 2.459-2.966 8.102-.005.082-.015.113-.016.199-.007.978 1.519 1.033 1.519.031l.273-3.64 1.047-1.354.04 2.5-2.094 9.476h7.507c.223 0 .261-.187.253-.282-.235-3.09-.817-5.69-1.668-8.1V9.944c.652 1.17.784 1.447 1.115 1.847.384.466.957.774 2.515 1.963.918.703 1.97-.312.896-1.106zm-5.977-8.68c1.136 0 2.058-.889 2.058-1.984C20.513.888 19.59 0 18.455 0c-1.137 0-2.059.888-2.059 1.984 0 1.095.922 1.984 2.059 1.984zm-4.13 20.71c-.367 1.445 1.538 1.908 1.904.464l1.026-4.04h-2.087l-.843 3.577z"
+									/>
+								</g>
+							</g>
+						</svg>
+						Casal
+					</label>
+				</fieldset>
+
+				<input type="button" name="next-step" value="Continuar" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- <div class="form-overlay" id="form-overlay"></div>
 
 <div class="contact-form" id="form-container">
 	<button class="contact-form-label" type="button" id="form-button">
@@ -14,11 +78,12 @@
 
 	<div class="contact-form-content">
 		<form action="/">
+
 			<fieldset class="contact-form-radio">
 				<legend>Procuro para:</legend>
 
 				<input type="radio" name="para" id="para1" value="Uma pessoa" checked />
-				<label for="para1">
+				<label class="radio-icon-label" for="para1">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -34,7 +99,7 @@
 				</label>
 
 				<input type="radio" name="para" id="para2" value="Casal" />
-				<label for="para2">
+				<label class="radio-icon-label" for="para2">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -54,7 +119,7 @@
 				<legend>Tipologia de Quarto:</legend>
 
 				<input type="radio" name="tipologia" id="tipologia1" value="Quarto Partilhado" checked />
-				<label for="tipologia1">
+				<label class="radio-icon-label" for="tipologia1">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -68,7 +133,7 @@
 				</label>
 
 				<input type="radio" name="tipologia" id="tipologia2" value="Quarto privado" />
-				<label for="tipologia2">
+				<label class="radio-icon-label" for="tipologia2">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -86,7 +151,7 @@
 				<legend>Tipo de serviço:</legend>
 
 				<input type="radio" name="tipo" id="tipo1" value="Standard" checked />
-				<label for="tipo1">
+				<label class="radio-icon-label" for="tipo1">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -102,7 +167,7 @@
 				</label>
 
 				<input type="radio" name="tipo" id="tipo2" value="Standard" />
-				<label for="tipo2">
+				<label class="radio-icon-label" for="tipo2">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46">
 						<g fill="none" fill-rule="evenodd">
 							<rect width="45.5" height="45.5" x=".25" y=".25" stroke="#00A8FF" stroke-width=".5" rx="4" />
@@ -126,19 +191,21 @@
 			</fieldset>
 
 			<input type="radio" name="tera" id="tera1" value="Hoje" />
-			<label for="tera1"> Hoje </label>
+			<label class="radio-label" for="tera1"> Hoje </label>
 
 			<input type="radio" name="tera" id="tera2" value="Dentro de dias" />
-			<label for="tera2"> Dentro de dias </label>
+			<label class="radio-label" for="tera2"> Dentro de dias </label>
 
 			<input type="radio" name="tera" id="tera3" value="Este mês ou no próximo" />
-			<label for="tera3"> Este mês ou no próximo </label>
+			<label class="radio-label" for="tera3"> Este mês ou no próximo </label>
 
 			<input type="radio" name="tera" id="tera4" value="Não tenho previsão" />
-			<label for="tera4"> Não tenho previsão </label>
+			<label class="radio-label" for="tera4"> Não tenho previsão </label>
 
-			<label for="text"> Não tenho previsão </label>
-			<input type="text" name="text" />
+			<fieldset>
+				<label class="input-label" for="text"> Não tenho previsão </label>
+				<input type="text" name="text" />
+			</fieldset>
 
 			<select name="district" id="district">
 				<option>Selecione o Distrito</option>
@@ -158,7 +225,7 @@
 			</fieldset>
 		</form>
 	</div>
-</div>
+</div> -->
 
 <footer id="contact" class="footer">
 	<div class="container footer__top">

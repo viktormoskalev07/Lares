@@ -24,7 +24,7 @@
 		@include md {
 			display: flex;
 			align-items: center;
-			margin: 0px 0 60px;
+			margin: 0px 0 75px;
 		}
 		.autores__link {
 			text-align: left;
@@ -65,7 +65,7 @@
 				.section-post__item {
 					width: 100%;
 					display: block;
-					margin: 0px 0px 60px;
+					margin: 0px 0px 75px;
 				}
 				.section-post__img {
 					max-width: none;
@@ -99,9 +99,9 @@
 					display: block;
 					margin: 0px 20px 60px;
 				}
-				.section-post__img {
-					max-width: 370px;
-				}
+				// .section-post__img {
+				// 	// max-width: 370px;
+				// }
 				.section-post__content {
 					width: 100%;
 					max-width: 335px;
@@ -293,7 +293,13 @@
 		}
 	}
 	&__tree-blocks {
+		.section-post__wrapper {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
 		.section-post__blocks_two {
+			margin-left: 0;
+			margin-right: 0;
 			@include xl {
 				width: 100%;
 				.section-post__item {
@@ -303,7 +309,7 @@
 			@include xxl {
 				width: 100%;
 				.section-post__item {
-					width: calc(33% - 40px);
+					width: calc(33.3333% - 40px);
 				}
 			}
 		}

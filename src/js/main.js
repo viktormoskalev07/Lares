@@ -11,30 +11,54 @@ const navBtn = document.querySelector('.nav__btn');
 
 
 
-var formContainer = document.querySelector('#form-container');
-var formOverlay = document.querySelector('#form-overlay');
-var formButton = document.querySelector('#form-button');
+function modalsInit(modal) {
+/*========= Modal ==========*/
+	const modalCall = document.querySelector('[data-modal]');
+	const modalClose = document.querySelector('[data-close]');
+   const modalDialog = document.querySelector('.modal-dialog');
 
+// Modal Call
+modalCall.addEventListener('click', function (event) {
+   event.preventDefault();
 
-bindFormClick();
-//Opening the form
-function bindFormClick(){
-  formButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      toggleForm();
-      this.classList.toggle('active');
-   });
-}
+   let modalId = document.querySelector(this.dataset.modal);
+   modalId.classList.add('show');
+   body.classList.add('no-scroll');
 
-//Closing the form
-formOverlay.addEventListener('click', function(e) {
-   e.stopPropagation();
-   e.preventDefault();
-   toggleForm();
+   setTimeout (function() {
+      modalDialog.style.transform='scale(1)';
+   }, 180);
 });
 
-function toggleForm(){
-   formContainer.classList.toggle('expand');
-   body.classList.toggle('show-form-overlay');
-//   $('.form-submitted').classList.remove('form-submitted');
+// Modal Close
+modalClose.addEventListener('click', function (event) {
+   event.preventDefault();
+
+   let modalParent = this.closest('.modal');
+   modalDialog.style.transform='scale(0)';
+
+   setTimeout(function () {
+      modalParent.classList.remove('show');
+      body.classList.remove('no-scroll');
+   }, 180);
+});
+
+// Modal Close (click to bg)
+modal.addEventListener('click', function () {
+   modalDialog.style.transform = 'scale(0)';
+
+   setTimeout(function () {
+      modal.classList.remove('show');
+      body.classList.remove('no-scroll');
+   }, 180);
+});
+
+modalDialog.addEventListener('click', function (event) {
+   event.stopPropagation();
+});
+}
+
+if (document.querySelector('.modal')) {
+   const modal = document.querySelector('.modal');
+   modalsInit(modal);
 }

@@ -36,8 +36,8 @@
 		}
 		a {
 			display: block;
-			span{
-				color:#00a8ff;
+			span {
+				color: #00a8ff;
 				font-size: 20px;
 				font-weight: bold;
 				display: none;
@@ -100,12 +100,11 @@
 					a {
 						padding: 15px;
 					}
-                    .sub-menu-toggle {
-                        display: none;
-                    }
+					.sub-menu-toggle {
+						display: none;
+					}
 				}
 			}
-
 		}
 		li {
 			display: block;
@@ -187,6 +186,21 @@
 				border: solid 1px #e5e5e5;
 				padding: 15px 40px 15px 20px;
 			}
+		}
+	}
+}
+
+body.search {
+	.header__search {
+		max-width: 350px;
+		svg {
+			circle,
+			line {
+				stroke: #00a8ff;
+			}
+		}
+		input {
+			border-color: #00a8ff;
 		}
 	}
 }
