@@ -2,13 +2,11 @@
 	background: #515353;
 	padding: 50px 23px;
 	border-radius: 3px;
-	// max-width: 1440px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	@include md {
 		margin-bottom: 85px;
 	}
-
 	&__title {
 		color: #fff;
 		margin: 0;
@@ -81,17 +79,17 @@
 			text-transform: uppercase;
 			margin-bottom: 28px;
 		}
-        &_section {
-            form {
-                .form__title {
-                    display: none;
-                }
-            }
-            .form {
-                margin: 0;
-                padding: 0;
-            }
-        }
+		&_section {
+			form {
+				.form__title {
+					display: none;
+				}
+			}
+			.form {
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 	&_light {
 		background: #fff;
@@ -179,14 +177,4 @@
 			display: flex;
 		}
 	}
-}
-
-.wpcf7 form .wpcf7-list-item,
-.wpcf7 form .wpcf7-list-item label,
-.wpcf7 form .wpcf7-response-output {
-	margin: 0;
-    color: #fff;
-}
-.wpcf7 form .wpcf7-response-output {
-    border-radius: 6px;
 }

@@ -2,7 +2,6 @@
 	background: #515353;
 	padding: 74px 0 58px;
 	color: #fff;
-	// max-width: 1440px;
 	margin: 0 auto;
 	.title {
 		color: #fff;
@@ -19,10 +18,10 @@
 	}
 	&__left {
 		margin-bottom: 30px;
-        h2 {
-            font-weight: 400;
-            line-height: 1.333;
-        }
+		h2 {
+			font-weight: 400;
+			line-height: 1.333;
+		}
 		@include md {
 			width: 45%;
 			margin-bottom: 0;
@@ -38,7 +37,7 @@
 			width: 100%;
 		}
 		p {
-            margin-top: 30px;
+			margin-top: 30px;
 			font-size: 10px;
 			color: #dadcdc;
 			vertical-align: middle;
@@ -71,13 +70,12 @@
 				}
 			}
 		}
-
 		input[type='checkbox'] {
-			// width: auto;
 			margin: 0 10px 0 0;
 			vertical-align: middle;
 		}
-		button {
+		button,
+		input[type='submit'] {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -86,6 +84,8 @@
 			width: 30px;
 			height: 30px;
 			padding: 0;
+			opacity: 0;
+			font-size: 0;
 		}
 	}
 }

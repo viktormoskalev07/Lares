@@ -14,8 +14,7 @@ function togglenav() {
     navBtn.style.marginRight = "0";
   }
 }
-navBtn.addEventListener("click", togglenav);
-// const links = header.querySelectorAll('a');
-// links.forEach(link => {
-//   link.addEventListener('click', closenav);
-// });
+
+if (navBtn) {
+  navBtn.addEventListener('click', togglenav)
+}
